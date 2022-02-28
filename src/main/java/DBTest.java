@@ -52,7 +52,7 @@ public class DBTest {
         // Fetch all ContactDBO objects stored in the database
         List<ContactDBO> contacts = session.createQuery("SELECT a FROM ContactDBO a", ContactDBO.class).getResultList();
 
-        // Iterate over all Contacts and print out there names
+        // Iterate over all Contacts and print out their names
         for (ContactDBO contact : contacts) {
             System.out.println("Contact found " + contact.id + ": " + contact.name);
         }
